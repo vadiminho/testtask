@@ -53,6 +53,7 @@ const ButtonFormBox = styled(BoxMui)(() => ({
 }));
 
 const LinksGroupBox = styled(BoxMui)(() => ({
+  maxWidth:'430px',
   width: '87%',
   height: '32px',
   marginTop: '30%',
