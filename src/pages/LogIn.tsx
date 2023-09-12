@@ -15,7 +15,7 @@ function LogIn() {
 
   return (
     <Grid container>
-      <Grid item xs={12} lg={4}>
+      <Grid item xs={12} lg={4} md={12}>
         <ContentBox>
           <HeaderBox>
             <LogoCardMedia>
