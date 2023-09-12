@@ -6,6 +6,8 @@ import cybellumLogo from '../assets/images/cybellum-logo-vertical-black.svg';
 import imacDigTwinsImage from '../assets/images/imac_dig_twins.png';
 import AuthForm from '../components/AuthForm';
 import useLogIn from '../hooks/useLogIn';
+import Hidden from '@mui/material/Hidden';
+
 
 function LogIn() {
   const { control, handleSubmit, errors } = useLogIn();
@@ -13,15 +15,25 @@ function LogIn() {
 
   return (
     <Grid container>
-      <Grid item xs={12} sm={4}>
+      <Grid item xs={12} lg={4}>
         <ContentBox>
           <HeaderBox>
             <LogoCardMedia>
               <img src={cybellumLogo} alt="cybellum-logo-vertical-black.svg" />
             </LogoCardMedia>
             <Typography variant="h1" component="div">
-              <Box sx={{ fontWeight: '300', fontSize: '56px', lineHeight: '64px', letterSpacing: '-0.5px' }}>Welcome to the</Box>
-              <Box sx={{ fontWeight: '300', fontSize: '56px', lineHeight: '64px', letterSpacing: '-0.5px' }}>Product Security Platform</Box>
+              <Box sx={{
+                fontWeight: '300',
+                fontSize: '2rem',
+                lineHeight: '1.5',
+                letterSpacing: '-0.5px',
+              }}>Welcome to the</Box>
+              <Box sx={{
+                fontWeight: '300',
+                fontSize: '2rem',
+                lineHeight: '1.5',
+                letterSpacing: '-0.5px',
+              }}>Product Security Platform</Box>
             </Typography>
           </HeaderBox>
 
@@ -40,10 +52,12 @@ function LogIn() {
         </ContentBox>
       </Grid>
 
-      <Grid item xs={12} sm={7}>
-        <MacLogoCardMedia>
-          <img src={imacDigTwinsImage} alt="cybellum-logo-vertical-black.svg" />
-        </MacLogoCardMedia>
+      <Grid item xs={12} lg={8} >
+        <Hidden only={['sm', 'md','xs']}>
+          <MacLogoCardMedia>
+            <img src={imacDigTwinsImage} alt="cybellum-logo-vertical-black.svg" style={{width:'100%'}}/>
+          </MacLogoCardMedia>
+        </Hidden>
       </Grid>
     </Grid>
   );

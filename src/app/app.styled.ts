@@ -5,7 +5,7 @@ import FormControlMui from '@mui/material/FormControl';
 import { styled } from '@mui/material/styles';
 
 const FormControl = styled(FormControlMui)(() => ({
-  width: '400px',
+  width: '100%',
   height: '144px',
   gap: '48px',
 }));
@@ -22,12 +22,12 @@ const AuthButton = styled(ButtonMui)(() => ({
 }));
 
 const ContentBox = styled(BoxMui)(() => ({
-  width: '636px',
-  height: '527px',
-  marginTop: '193px',
-  marginLeft: '182px',
-  marginRight: '1102px',
-  marginBottom: '360px',
+  width: '100%',
+  height: 'auto',
+  marginTop: '20%',
+  marginLeft: '25%',
+  marginRight: '40%',
+  marginBottom: '20%',
   gap: '56px',
   display: 'inline-flex',
   flexDirection: 'column',
@@ -42,20 +42,20 @@ const HeaderBox = styled(BoxMui)(() => ({
 }));
 
 const AuthFormBox = styled(BoxMui)(() => ({
-  width: '400px',
-  height: '256px',
+  width: '85x%',
+  height: 'auto',
 }));
 
 const ButtonFormBox = styled(BoxMui)(() => ({
-  width: '400px',
-  height: '112px',
+  width: '100%',
+  height: 'auto',
   justifyContent: 'space-between',
 }));
 
 const LinksGroupBox = styled(BoxMui)(() => ({
-  width: '400px',
+  width: '87%',
   height: '32px',
-  marginTop: '250px',
+  marginTop: '30%',
   display: 'flex',
   justifyContent: 'space-between',
   alignItems: 'center',
@@ -73,8 +73,6 @@ const LogoCardMedia = styled(CardMediaMui)(() => {
 
 const MacLogoCardMedia = styled(CardMediaMui)(() => {
   return {
-    width: '1237px',
-    height: '943px',
     flexShrink: '0',
     marginLeft: '40px',
     marginTop: '71px',

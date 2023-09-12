@@ -3,7 +3,7 @@ import { createSlice } from '@reduxjs/toolkit';
 const initialState = {
   isAuthenticated: !!localStorage.getItem('token'),
   accessToken: localStorage.getItem('token') || '',
-  authenticatedError: '',
+  authenticatedError: null,
 };
 
 const authSlice = createSlice({
@@ -14,7 +14,7 @@ const authSlice = createSlice({
       state.authenticatedError = action.payload;
     },
     clearAuthenticatedError: (state) => {
-      state.authenticatedError = '';
+      state.authenticatedError = null;
     },
     setAuthenticated: (state, action) => {
       state.isAuthenticated = action.payload;

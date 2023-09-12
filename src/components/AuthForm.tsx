@@ -8,7 +8,7 @@ interface AuthFormProps {
   onSubmit: () => void;
   control: Control<AuthFormData>;
   errors: FieldErrors<AuthFormData>;
-  error?: string;
+  error?: null;
 }
 
 function AuthForm({ onSubmit, control, errors, error }: AuthFormProps) {
